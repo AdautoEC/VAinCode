@@ -26,24 +26,41 @@ def attsDoElemento(arquivo, elementos):
 
 
 def attsProcurados(atributosDoElemento, atributosProcurados):
-	total = 0
 	procurado = 0
 	for attp in atributosProcurados:
 		for atte in atributosDoElemento:
 			if attp in atte: 
 				procurado = procurado+1
-			total = total+1
-	return 100*procurado/total if (total != 0) else 0
+	return procurado
 		
+
+def fncProcurados(arquivos, funcoesProcuradas):
+	ocorrencia = 0
+	for arq in arquivos:
+		meuArquivo = open(arq)
+		for linha in meuArquivo:
+			linha = linha.strip('\n')
+			linha = linha.split()
+			for palavra in linha:
+				for funcao in funcoesProcuradas:
+					if palavra.find(funcao) != -1:
+						ocorrencia = ocorrencia + 1
+	return ocorrencia
 
 
 def main():
-	elementos = ['TextView', 'LinearLayout', 'RelativeLayout', 'FrameLayout', 'GridLayout', 'Button', 'ImageButton', 'CheckedBox', 'EditText', 'ImageView', 'CartView', 'BrowserView']
-	atributos = [':contetDescription', ':importantForAccessibility', ':id', ':accessibilityPaneTitle']
+	pasta = './FillerCreep/FillerCreepForAndroid-master/'
+	elementos = ['TextView', 'Button', 'ImageButton', 'EditText', 'ImageView', 'CartView', 'BrowserView']
+	atributos = ['android:contetDescription', 'android:importantForAccessibility']
+	funcoes = ['setContentDescription']
 
-	arquivosXml = filtro(percorrePasta('./'), '.xml')
+	arquivosXml = filtro(percorrePasta(pasta), '.xml')
 	for arquivo in arquivosXml:
-		print(attsProcurados(attsDoElemento(arquivo, elementos), atributos))
+		procurados = attsProcurados(attsDoElemento(arquivo, elementos), atributos)
+		if procurados != 0: print(arquivo + ':', procurados)
+
+	arquivosJava = filtro(percorrePasta(pasta), '.java')
+	print('Ocorrencias:', fncProcurados(arquivosJava, funcoes))
 
 
 if __name__ == "__main__":
