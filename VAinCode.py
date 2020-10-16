@@ -38,7 +38,7 @@ def attsProcurados(atributosDoElemento, atributosProcurados):
 def fncProcurados(arquivos, funcoesProcuradas):
 	ocorrencia = 0
 	for arq in arquivos:
-		meuArquivo = open(arq)
+		meuArquivo = open(arq, encoding="utf8")
 		for linha in meuArquivo:
 			linha = linha.strip('\n')
 			linha = linha.split()
@@ -50,7 +50,7 @@ def fncProcurados(arquivos, funcoesProcuradas):
 
 
 def main():
-	pasta = './architecture-samples-main/'
+	pasta = './user-interface-samples-main/'
 	elementos = ['TextView', 'Button', 'ImageButton', 'EditText', 'ImageView', 'CartView', 'BrowserView']
 	atributos = ['android:contentDescription', 'android:importantForAccessibility']
 	funcoes = ['setContentDescription']
@@ -60,6 +60,9 @@ def main():
 		for elemento in elementos:
 			procurados = attsProcurados(attsDoElemento(arquivo, [elemento]), atributos)
 			if procurados != 0: print(arquivo + ':', procurados, "em " + elemento)
+	'''for arquivo in arquivosXml:
+		procurados = attsProcurados(attsDoElemento(arquivo, elementos), atributos)
+		if procurados != 0: print(arquivo + ':', procurados)'''
 
 	arquivosJava = filtro(percorrePasta(pasta), '.java')
 	print('Ocorrencias:', fncProcurados(arquivosJava, funcoes))
