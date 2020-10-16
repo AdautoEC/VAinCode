@@ -36,21 +36,32 @@ def attsProcurados(atributosDoElemento, atributosProcurados):
 		
 
 def fncProcurados(arquivos, funcoesProcuradas):
-	ocorrencia = 0
+	ocorrencia = 0 
+
 	for arq in arquivos:
-		meuArquivo = open(arq, encoding="utf8")
-		for linha in meuArquivo:
-			linha = linha.strip('\n')
-			linha = linha.split()
-			for palavra in linha:
-				for funcao in funcoesProcuradas:
-					if palavra.find(funcao) != -1:
-						ocorrencia = ocorrencia + 1
+		try:
+			meuArquivo = open(arq, encoding="utf8")
+			for linha in meuArquivo:
+				linha = linha.strip('\n')
+				linha = linha.split()
+				for palavra in linha:
+					for funcao in funcoesProcuradas:
+						if palavra.find(funcao) != -1:
+							ocorrencia = ocorrencia + 1
+		except:
+			meuArquivo = open(arq, encoding="ISO-8859-1")
+			for linha in meuArquivo:
+				linha = linha.strip('\n')
+				linha = linha.split()
+				for palavra in linha:
+					for funcao in funcoesProcuradas:
+						if palavra.find(funcao) != -1:
+							ocorrencia = ocorrencia + 1
 	return ocorrencia
 
 
 def main():
-	pasta = './user-interface-samples-main/'
+	pasta = './DaltonicApp-master/DaltonicApp/'
 	elementos = ['TextView', 'Button', 'ImageButton', 'EditText', 'ImageView', 'CartView', 'BrowserView']
 	atributos = ['android:contentDescription', 'android:importantForAccessibility']
 	funcoes = ['setContentDescription']
