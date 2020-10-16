@@ -31,6 +31,7 @@ def attsProcurados(atributosDoElemento, atributosProcurados):
 		for atte in atributosDoElemento:
 			if attp in atte: 
 				procurado = procurado+1
+
 	return procurado
 		
 
@@ -49,15 +50,16 @@ def fncProcurados(arquivos, funcoesProcuradas):
 
 
 def main():
-	pasta = './FillerCreep/FillerCreepForAndroid-master/'
+	pasta = './architecture-samples-main/'
 	elementos = ['TextView', 'Button', 'ImageButton', 'EditText', 'ImageView', 'CartView', 'BrowserView']
-	atributos = ['android:contetDescription', 'android:importantForAccessibility']
+	atributos = ['android:contentDescription', 'android:importantForAccessibility']
 	funcoes = ['setContentDescription']
 
 	arquivosXml = filtro(percorrePasta(pasta), '.xml')
 	for arquivo in arquivosXml:
-		procurados = attsProcurados(attsDoElemento(arquivo, elementos), atributos)
-		if procurados != 0: print(arquivo + ':', procurados)
+		for elemento in elementos:
+			procurados = attsProcurados(attsDoElemento(arquivo, [elemento]), atributos)
+			if procurados != 0: print(arquivo + ':', procurados, "em " + elemento)
 
 	arquivosJava = filtro(percorrePasta(pasta), '.java')
 	print('Ocorrencias:', fncProcurados(arquivosJava, funcoes))
