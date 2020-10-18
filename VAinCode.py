@@ -37,6 +37,7 @@ def attsProcurados(atributosDoElemento, atributosProcurados):
 
 def fncProcurados(arquivos, funcoesProcuradas):
 	ocorrencia = 0 
+	encontrados = []
 
 	for arq in arquivos:
 		try:
@@ -47,6 +48,7 @@ def fncProcurados(arquivos, funcoesProcuradas):
 				for palavra in linha:
 					for funcao in funcoesProcuradas:
 						if palavra.find(funcao) != -1:
+							if funcao not in encontrados: encontrados.append(funcao)
 							ocorrencia = ocorrencia + 1
 		except:
 			meuArquivo = open(arq, encoding="ISO-8859-1")
@@ -56,15 +58,17 @@ def fncProcurados(arquivos, funcoesProcuradas):
 				for palavra in linha:
 					for funcao in funcoesProcuradas:
 						if palavra.find(funcao) != -1:
+							if funcao not in encontrados: encontrados.append(funcao)
 							ocorrencia = ocorrencia + 1
-	return ocorrencia
+
+	return encontrados
 
 
 def main():
-	pasta = './DaltonicApp-master/DaltonicApp/'
+	pasta = './Projetos/'
 	elementos = ['TextView', 'Button', 'ImageButton', 'EditText', 'ImageView', 'CartView', 'BrowserView']
 	atributos = ['android:contentDescription', 'android:importantForAccessibility']
-	funcoes = ['setContentDescription']
+	funcoes = ['setContentDescription', 'AudioManager', 'MotionEvent', 'Vibrator', 'TextToSpeech']
 
 	arquivosXml = filtro(percorrePasta(pasta), '.xml')
 	for arquivo in arquivosXml:
@@ -76,7 +80,7 @@ def main():
 		if procurados != 0: print(arquivo + ':', procurados)'''
 
 	arquivosJava = filtro(percorrePasta(pasta), '.java')
-	print('Ocorrencias:', fncProcurados(arquivosJava, funcoes))
+	print('Ocorrencias em', fncProcurados(arquivosJava, funcoes))
 
 
 if __name__ == "__main__":
