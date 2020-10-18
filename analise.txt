@@ -1,0 +1,247 @@
+--------------------------------------------------------------
+Inicio do ./Projetos/Adnroid-Architecture-MVP-master
+
+Ocorrencias em []
+
+Final do ./Projetos/Adnroid-Architecture-MVP-master
+--------------------------------------------------------------
+
+
+
+--------------------------------------------------------------
+Inicio do ./Projetos/AiYaSchoolPush-master
+
+./Projetos/AiYaSchoolPush-master\app\src\main\res\layout\activity_video_player.xml: 1 em ImageView
+./Projetos/AiYaSchoolPush-master\document\Android\app\src\main\res\layout\activity_video_player.xml: 1 em ImageView
+Ocorrencias em ['AudioManager', 'MotionEvent', 'Vibrator']
+
+Final do ./Projetos/AiYaSchoolPush-master
+--------------------------------------------------------------
+
+
+
+--------------------------------------------------------------
+Inicio do ./Projetos/android-accessibility-master
+
+./Projetos/android-accessibility-master\android-accessibility-master\BasicAndroidAccessibility-Java\app\src\main\res\layout\content_expand_touch_area.xml: 1 em ImageButton
+./Projetos/android-accessibility-master\android-accessibility-master\BasicAndroidAccessibility-Java\app\src\main\res\layout\content_labeling.xml: 1 em ImageButton
+./Projetos/android-accessibility-master\android-accessibility-master\BasicAndroidAccessibility-Kotlin\app\src\main\res\layout\content_expand_touch_area.xml: 1 em ImageButton
+./Projetos/android-accessibility-master\android-accessibility-master\BasicAndroidAccessibility-Kotlin\app\src\main\res\layout\content_labeling.xml: 1 em ImageButton
+./Projetos/android-accessibility-master\app\src\main\res\layout\activity_image_example.xml: 1 em ImageButton
+./Projetos/android-accessibility-master\app\src\main\res\layout\activity_image_example.xml: 9 em ImageView
+./Projetos/android-accessibility-master\app\src\main\res\layout\activity_material.xml: 4 em ImageView
+./Projetos/android-accessibility-master\app\src\main\res\layout\activity_text_example.xml: 5 em TextView
+Ocorrencias em ['setContentDescription', 'AudioManager']
+
+Final do ./Projetos/android-accessibility-master
+--------------------------------------------------------------
+
+
+
+--------------------------------------------------------------
+Inicio do ./Projetos/android-BasicAccessibility-master
+
+./Projetos/android-BasicAccessibility-master\Application\src\main\res\layout\sample_main.xml: 2 em ImageButton
+./Projetos/android-BasicAccessibility-master\Application\src\main\res\layout\sample_main.xml: 1 em ImageView
+Ocorrencias em []
+
+Final do ./Projetos/android-BasicAccessibility-master
+--------------------------------------------------------------
+
+
+
+--------------------------------------------------------------
+Inicio do ./Projetos/AndroidMvc
+
+Ocorrencias em []
+
+Final do ./Projetos/AndroidMvc
+--------------------------------------------------------------
+
+
+
+--------------------------------------------------------------
+Inicio do ./Projetos/AndroidQuick-4.x
+
+Ocorrencias em ['MotionEvent']
+
+Final do ./Projetos/AndroidQuick-4.x
+--------------------------------------------------------------
+
+
+
+--------------------------------------------------------------
+Inicio do ./Projetos/architecture-components-samples-main
+
+./Projetos/architecture-components-samples-main\BasicSample\app\src\main\res\layout\list_fragment.xml: 1 em ImageButton
+./Projetos/architecture-components-samples-main\BasicSample\app\src\main\res\layout\product_item.xml: 1 em TextView
+./Projetos/architecture-components-samples-main\GithubBrowserSample\app\src\main\res\layout\contributor_item.xml: 1 em ImageView
+./Projetos/architecture-components-samples-main\GithubBrowserSample\app\src\main\res\layout\user_fragment.xml: 1 em TextView
+./Projetos/architecture-components-samples-main\GithubBrowserSample\app\src\main\res\layout\user_fragment.xml: 1 em ImageView
+./Projetos/architecture-components-samples-main\NavigationAdvancedSample\app\src\main\res\layout\fragment_register.xml: 1 em Button
+./Projetos/architecture-components-samples-main\NavigationAdvancedSample\app\src\main\res\layout\list_view_item.xml: 1 em ImageView
+./Projetos/architecture-components-samples-main\NavigationBasicSample\app\src\main\res\layout\list_view_item.xml: 1 em ImageView
+./Projetos/architecture-components-samples-main\WorkManagerSample\app\src\main\res\layout\activity_processing.xml: 1 em ImageView
+Ocorrencias em []
+
+Final do ./Projetos/architecture-components-samples-main
+--------------------------------------------------------------
+
+
+
+--------------------------------------------------------------
+Inicio do ./Projetos/architecture-samples-main
+
+./Projetos/architecture-samples-main\app\src\main\res\layout\nav_header.xml: 1 em ImageView
+./Projetos/architecture-samples-main\app\src\main\res\layout\tasks_frag.xml: 1 em ImageView
+Ocorrencias em []
+
+Final do ./Projetos/architecture-samples-main
+--------------------------------------------------------------
+
+
+
+--------------------------------------------------------------
+Inicio do ./Projetos/Blind-Navigation-master
+
+Ocorrencias em ['MotionEvent', 'AudioManager']
+
+Final do ./Projetos/Blind-Navigation-master
+--------------------------------------------------------------
+
+
+
+--------------------------------------------------------------
+Inicio do ./Projetos/camera-samples-main
+
+./Projetos/camera-samples-main\Camera2Basic\app\src\main\res\layout\fragment_camera.xml: 1 em ImageButton
+./Projetos/camera-samples-main\Camera2Basic\app\src\main\res\layout-land\fragment_camera.xml: 1 em ImageButton
+./Projetos/camera-samples-main\Camera2SlowMotion\app\src\main\res\layout\fragment_camera.xml: 1 em ImageButton
+./Projetos/camera-samples-main\Camera2SlowMotion\app\src\main\res\layout-land\fragment_camera.xml: 1 em ImageButton
+./Projetos/camera-samples-main\Camera2Video\app\src\main\res\layout\fragment_camera.xml: 1 em ImageButton
+./Projetos/camera-samples-main\Camera2Video\app\src\main\res\layout-land\fragment_camera.xml: 1 em ImageButton
+./Projetos/camera-samples-main\CameraXBasic\app\src\main\res\layout\camera_ui_container.xml: 3 em ImageButton
+./Projetos/camera-samples-main\CameraXBasic\app\src\main\res\layout\fragment_gallery.xml: 3 em ImageButton
+./Projetos/camera-samples-main\CameraXBasic\app\src\main\res\layout-land\camera_ui_container.xml: 3 em ImageButton
+./Projetos/camera-samples-main\CameraXTfLite\app\src\main\res\layout\activity_camera.xml: 1 em ImageButton
+./Projetos/camera-samples-main\CameraXTfLite\app\src\main\res\layout-land\activity_camera.xml: 1 em ImageButton
+Ocorrencias em ['MotionEvent']
+
+Final do ./Projetos/camera-samples-main
+--------------------------------------------------------------
+
+
+
+--------------------------------------------------------------
+Inicio do ./Projetos/DaltonicApp-master
+
+Ocorrencias em []
+
+Final do ./Projetos/DaltonicApp-master
+--------------------------------------------------------------
+
+
+
+--------------------------------------------------------------
+Inicio do ./Projetos/Eye-Android-master
+
+Ocorrencias em ['TextToSpeech']
+
+Final do ./Projetos/Eye-Android-master
+--------------------------------------------------------------
+
+
+
+--------------------------------------------------------------
+Inicio do ./Projetos/eye-helper-master
+
+./Projetos/eye-helper-master\CameraDemo\build\intermediates\exploded-aar\com.android.support\appcompat-v7\19.1.0\res\layout\abc_search_view.xml: 4 em ImageView
+./Projetos/eye-helper-master\CameraDemo\build\intermediates\exploded-aar\com.android.support\appcompat-v7\20.0.0\res\layout\abc_search_view.xml: 4 em ImageView
+./Projetos/eye-helper-master\CameraDemo\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.0-rc1\res\layout\abc_search_view.xml: 4 em ImageView
+Ocorrencias em ['TextToSpeech']
+
+Final do ./Projetos/eye-helper-master
+--------------------------------------------------------------
+
+
+
+--------------------------------------------------------------
+Inicio do ./Projetos/FillerCreepForAndroid-master
+
+Ocorrencias em []
+
+Final do ./Projetos/FillerCreepForAndroid-master
+--------------------------------------------------------------
+
+
+
+--------------------------------------------------------------
+Inicio do ./Projetos/MVCHelper-master
+
+Ocorrencias em ['MotionEvent']
+
+Final do ./Projetos/MVCHelper-master
+--------------------------------------------------------------
+
+
+
+--------------------------------------------------------------
+Inicio do ./Projetos/Retina-master
+
+Ocorrencias em ['AudioManager', 'Vibrator', 'TextToSpeech']
+
+Final do ./Projetos/Retina-master
+--------------------------------------------------------------
+
+
+
+--------------------------------------------------------------
+Inicio do ./Projetos/ThinkAndroid-master
+
+Ocorrencias em []
+
+Final do ./Projetos/ThinkAndroid-master
+--------------------------------------------------------------
+
+
+
+--------------------------------------------------------------
+Inicio do ./Projetos/user-interface-samples-main
+
+./Projetos/user-interface-samples-main\People\app\src\main\res\layout\chat_fragment.xml: 2 em ImageButton
+./Projetos/user-interface-samples-main\People\app\src\main\res\layout\chat_fragment.xml: 1 em ImageView
+./Projetos/user-interface-samples-main\People\app\src\main\res\layout\chat_item.xml: 1 em ImageView
+./Projetos/user-interface-samples-main\People\app\src\main\res\layout\main_activity.xml: 1 em ImageView
+./Projetos/user-interface-samples-main\People\app\src\main\res\layout\photo_fragment.xml: 1 em ImageView
+./Projetos/user-interface-samples-main\People\app\src\main\res\layout\voice_call_activity.xml: 1 em ImageView
+./Projetos/user-interface-samples-main\WindowManager\app\src\main\res\layout\activity_display_features.xml: 3 em ImageView
+./Projetos/user-interface-samples-main\WindowManager\app\src\main\res\layout\split_layout_content.xml: 1 em ImageView
+Ocorrencias em ['MotionEvent']
+
+Final do ./Projetos/user-interface-samples-main
+--------------------------------------------------------------
+
+
+
+--------------------------------------------------------------
+Inicio do ./Projetos/Voicemail-master
+
+Ocorrencias em ['TextToSpeech']
+
+Final do ./Projetos/Voicemail-master
+--------------------------------------------------------------
+
+
+
+--------------------------------------------------------------
+Inicio do ./Projetos/WhatisthisApp-master
+
+./Projetos/WhatisthisApp-master\app\src\main\res\layout\activity_splash_main.xml: 1 em ImageButton
+./Projetos/WhatisthisApp-master\app\src\main\res\layout\activity_splash_main.xml: 1 em ImageView
+Ocorrencias em []
+
+Final do ./Projetos/WhatisthisApp-master
+--------------------------------------------------------------
+
+
+

@@ -1,6 +1,7 @@
 import os
 from xml.dom import minidom
 
+pastaProjetos = './Projetos/'
 
 def percorrePasta(pasta):
 	caminhos = [os.path.join(pasta, nome) for nome in os.listdir(pasta)]
@@ -64,24 +65,36 @@ def fncProcurados(arquivos, funcoesProcuradas):
 	return encontrados
 
 
-def main():
-	pasta = './Projetos/'
+def analise(pasta):
 	elementos = ['TextView', 'Button', 'ImageButton', 'EditText', 'ImageView', 'CartView', 'BrowserView']
 	atributos = ['android:contentDescription', 'android:importantForAccessibility']
 	funcoes = ['setContentDescription', 'AudioManager', 'MotionEvent', 'Vibrator', 'TextToSpeech']
+
+	print("--------------------------------------------------------------")
+	print("Inicio do", pasta)
+	print()
 
 	arquivosXml = filtro(percorrePasta(pasta), '.xml')
 	for arquivo in arquivosXml:
 		for elemento in elementos:
 			procurados = attsProcurados(attsDoElemento(arquivo, [elemento]), atributos)
 			if procurados != 0: print(arquivo + ':', procurados, "em " + elemento)
-	'''for arquivo in arquivosXml:
-		procurados = attsProcurados(attsDoElemento(arquivo, elementos), atributos)
-		if procurados != 0: print(arquivo + ':', procurados)'''
 
 	arquivosJava = filtro(percorrePasta(pasta), '.java')
 	print('Ocorrencias em', fncProcurados(arquivosJava, funcoes))
 
+	print()
+	print("Final do", pasta)
+	print("--------------------------------------------------------------")
+	print("\n\n")
+
+
+def main():
+	caminhos = [os.path.join(pastaProjetos, nome) for nome in os.listdir(pastaProjetos)]
+	projetos = [pas for pas in caminhos if os.path.isdir(pas)]
+
+	for projeto in projetos:
+		analise(projeto)
 
 if __name__ == "__main__":
     main()
