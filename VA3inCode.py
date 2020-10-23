@@ -51,7 +51,7 @@ def fncProcurados(arquivos, funcoesProcuradas):
 				for palavra in linha:
 					for funcao in funcoesProcuradas:
 						if palavra.find(funcao) != -1:
-							if funcao not in encontrados: encontrados.append(funcao + " no arquivo:"+ nomeArq[-1])
+							if (funcao + " no arquivo:"+ nomeArq[-1]) not in encontrados: encontrados.append(funcao + " no arquivo:"+ nomeArq[-1])
 							ocorrencia = ocorrencia + 1
 		except:
 			meuArquivo = open(arq, encoding="ISO-8859-1")
@@ -61,7 +61,7 @@ def fncProcurados(arquivos, funcoesProcuradas):
 				for palavra in linha:
 					for funcao in funcoesProcuradas:
 						if palavra.find(funcao) != -1:
-							if funcao not in encontrados: encontrados.append(funcao+ "no arquivo:"+ nomeArq[-1])
+							if (funcao + " no arquivo:"+ nomeArq[-1]) not in encontrados: encontrados.append(funcao+ "no arquivo:"+ nomeArq[-1])
 							ocorrencia = ocorrencia + 1
 
 	return encontrados
